@@ -29,7 +29,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -c $<
 
 # UPDATE HEADER FILE
-$(OBJS): *.h
+#$(OBJS): *.h
 
 # CLEAN FILES (PHONY TARGET)
 .PHONY: clean
