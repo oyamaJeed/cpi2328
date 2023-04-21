@@ -1,5 +1,5 @@
 # TARGET NAME
-TARGET := test2
+TARGET := display
 
 # SOURCE FILES
 SRC := $(TARGET).c
@@ -19,18 +19,18 @@ SHARED := -shared
 
 CC := gcc $(CFLAGS) $(LFLAGS)
 
+
 all : $(TARGET)
 
 # LINK OBJECTS
 $(TARGET): $(OBJ) 
-	$(CC) -o $(TARGET) $(SRC) -L. -ldlink
-	export LD_LIBRARY_PATH="/home/meit2328/cpi2328"
-	
+	$(CC) $(SHARED) $(SRC) -fPIC -o $(SO)
+
 # COMPILE SOURCES
 .c.o:
 	$(CC) -c $^
 
 # CLEAN FILES (PHONY TARGET)
 clean:
-	rm -f $(TARGET) $(OBJ) test2_exe
+	rm -f $(TARGET) $(OBJ) $(SO)
 
