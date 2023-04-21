@@ -32,5 +32,5 @@ $(TARGET): $(OBJ)
 
 # CLEAN FILES (PHONY TARGET)
 clean:
-	rm -f $(TARGET) $(OBJ) test2_exe
+	rm -f $(TARGET) $(OBJ)
 
