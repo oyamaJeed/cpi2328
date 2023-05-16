@@ -1,3 +1,6 @@
+/*** TCP/IP server program ***/
+/* Usage: ./k06s <echo port>t */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
