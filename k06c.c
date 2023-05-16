@@ -1,3 +1,9 @@
+/*** TCP/IP client program ***/
+/* Usage: k06c <server IP> <echo word> [<echo port>] */
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
