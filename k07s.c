@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define BUFFER_SIZE 256
+#define BUFFER_SIZE 255
 
 void excep(char *errMsg) {
     fprintf(stderr, "Error: %s\n", errMsg);
