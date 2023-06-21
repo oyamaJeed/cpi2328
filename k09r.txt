@@ -1,0 +1,7 @@
+105行目からのクライアントにサーバからエコー返信する下記のプログラム、
+
+if(sendto(sock,echoBuffer,recvMsgSize,0,(struct sockaddr *)&echoClntAddr,sizeof(echoClntAddr))!=recvMsgSize){
+	excep("sendto() failed");
+｝
+
+をコメントアウトすることでタイムアウトしたときの処理をテストすることができる。
