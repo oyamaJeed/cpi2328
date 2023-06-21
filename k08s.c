@@ -102,9 +102,9 @@ void SIGIOHandler(int signalType)
 			printf("Handling client %s \n",inet_ntoa(echoClntAddr.sin_addr));
 			
 			// クライアントにエコーバックするメッセージの送信
-			if(sendto(sock,echoBuffer,recvMsgSize,0,(struct sockaddr *)&echoClntAddr,sizeof(echoClntAddr))!=recvMsgSize){
+			/*if(sendto(sock,echoBuffer,recvMsgSize,0,(struct sockaddr *)&echoClntAddr,sizeof(echoClntAddr))!=recvMsgSize){
 				excep("sendto() failed");
-			}
+			}*/
 		}
 	}while(recvMsgSize >= 0);
 }
